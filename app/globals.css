@@ -6,30 +6,34 @@
 @layer base {
   html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
   }
-  
+
   body {
     font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
   }
 }
+
+
 
 @layer components {
   .btn-primary {
     @apply bg-royal-gold text-royal-navy px-8 py-3 rounded-lg font-semibold transition-all duration-300 hover:bg-yellow-400 hover:shadow-lg hover:scale-105;
   }
-  
+
   .btn-secondary {
     @apply border-2 border-royal-gold text-royal-gold px-8 py-3 rounded-lg font-semibold transition-all duration-300 hover:bg-royal-gold hover:text-royal-navy hover:shadow-lg;
   }
-  
+
   .section-padding {
     @apply px-4 sm:px-6 lg:px-8 py-16 lg:py-24;
   }
-  
+
   .container-custom {
     @apply max-w-7xl mx-auto;
   }
-  
+
   .gradient-overlay {
     @apply absolute inset-0 bg-gradient-to-r from-royal-navy/80 to-royal-navy/40;
   }
